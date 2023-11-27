@@ -23,8 +23,6 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    max-width: 1400px;
-    margin: auto;
     padding: 0 20px;
     box-sizing: border-box;
     align-items: center;
@@ -68,15 +66,8 @@ header ul {
     cursor: pointer;
 }
 
-main {
-    max-width: 1400px;
-    margin: auto;
-}
-
 footer {
     width: 100%;
-    max-width: 1400px;
-    margin: auto;
     background-color: var(--main-bg-color);
     text-align: center;
     text-transform: uppercase;
