@@ -3,10 +3,8 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  height: 400px;
   color: aliceblue;
   line-height: 50px;
-  min-height: 47rem;
 }
 
 h1 {
