@@ -1,0 +1,17 @@
+main {
+  background-image: url("../images/IMG_5473.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 400px;
+  color: aliceblue;
+  line-height: 50px;
+  min-height: 47rem;
+}
+
+h1 {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
