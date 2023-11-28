@@ -10,14 +10,7 @@ main {
   align-items: center;
   justify-content: center;
   gap: 20px;
-}
-
-h1 {
-  
-}
-
-main ul {
-
+  color: var(--main-text-color);
 }
 
 main ul {
@@ -39,6 +32,7 @@ main ul li {
   gap: 20px;
   border-radius: 15px;
   cursor: pointer;
+  color: var(--main-text-color);
 }
 
 main ul li img {

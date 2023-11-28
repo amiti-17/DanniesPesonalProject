@@ -1,7 +1,10 @@
+main {
+    height: fit-content;
+}
 
 .mainContent {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   justify-content: space-around;
   align-content: center;
   background-color: #698282;
@@ -12,12 +15,29 @@
 }
 
 .card {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
     min-width: 200px;
-    max-width: 350px;
-    width: 40%;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.div-with-p {
+    min-width: 300px;
+    width: 60%;
+}
+
+.card-image {
+    width: 25%;
+    margin: 15px 25px;
+    height: fit-content;
+    border-radius: 20px;
 }
 
 .card h2 {
+    border-radius: 10px;
     background-color: #D9D9D9;
     text-transform: uppercase;
     font-weight: bolder;
@@ -27,5 +47,151 @@
 .card p {
     background-color: #698282;
     padding: 10px;
+}
 
+main ul {
+    list-style: square;
+    padding-left: 30px;
+}
+  
+.list-style {
+list-style: none;
+}
+
+.loading-icon {
+    width: 5%;
+    padding: 10%;
+}
+
+.container {
+	max-width: 500px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { 
+  font: 400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; 
+}
+
+#contact {
+	background:var(--main-text-color);
+	padding:25px;
+	margin:50px 0;
+}
+
+#contact h3 {
+	color: #F96;
+	display: block;
+	font-size: 30px;
+	font-weight: 400;
+}
+
+#contact h4 {
+	margin: 5px 0 15px;
+	display: block;
+	font-size: 13px;
+}
+
+fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+	width: 100%;
+	border: 1px solid #CCC;
+	background:#FFF;
+	margin: 0 0 5px;
+	padding: 10px;
+  box-sizing: border-box;
+}
+
+#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
+	-webkit-transition: border-color 0.3s ease-in-out;
+	-moz-transition: border-color 0.3s ease-in-out;
+	transition: border-color 0.3s ease-in-out;
+	border: 1px solid #AAA;
+}
+
+#contact textarea {
+	height:100px;
+	max-width:100%;
+  resize:none;
+}
+
+#contact button[type="submit"] {
+	cursor:pointer;
+	width:100%;
+	border:none;
+	background:var(--secondary-text-color);
+	color:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+	font-size:15px;
+}
+
+#contact button[type="submit"]:hover {
+	background:#09C;
+	-webkit-transition: background 0.3s ease-in-out;
+	-moz-transition: background 0.3s ease-in-out;
+	transition: background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#contact input:focus, #contact textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}
+::-webkit-input-placeholder {
+ color:#888;
+}
+:-moz-placeholder {
+ color:#888;
+}
+::-moz-placeholder {
+ color:#888;
+}
+:-ms-input-placeholder {
+ color:#888;
+}
+
+@media (max-width: 1280px) {
+    .card {
+        flex-direction: column;
+    }
+    .card-image {
+        width: 60%;
+    }
+    .loading-icon {
+        padding: 4%;
+    }
+}
+
+@media (max-width: 768px) {
+    .div-with-p {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .card-image {
+        width: 90%;
+        margin: 15px 25px;
+        height: fit-content;
+        border-radius: 20px;
+    }
+
+    .div-with-p {
+        width: 90%;
+    }
+    
+    .loading-icon {
+        width: 5%;
+        padding: 10%;
+    }
 }
