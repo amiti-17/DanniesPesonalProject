@@ -1,7 +1,31 @@
 main {
-  
+  width: fit-content;
+  height: fit-content;
+  color: antiquewhite;
+  font-size: large;
+}
+
+h1 {
+  margin: 25px 15px 15px 15px;
 }
 
 .myFace {
-  width: 30%;
+  width: 35%;
+  margin: 15px 25px;
+  height: fit-content;
+}
+
+.main-group {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.div-with-p {
+  min-width: 300px;
+  width: 40%;
+}
+
+main ul {
+  list-style: square;
+  padding-left: 30px;
 }

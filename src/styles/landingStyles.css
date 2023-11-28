@@ -1,15 +1,50 @@
 main {
   background-image: url("../images/IMG_5473.JPG");
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  position: relative;
   color: aliceblue;
   line-height: 50px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
 h1 {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  
+}
+
+main ul {
+
+}
+
+main ul {
+  width: 15%;
+  min-width: 300px;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 20px;
+  border-radius: 15px;
+}
+
+main ul li {
+  min-width: 90%;
+  width: 80%;
+  background-color: var(--main-bg-color);
+  font-size: x-large;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+main ul li img {
+  width: 15%;
+  padding: 5px 0px;
+}
+
+.callToAction1 > img {
 }
